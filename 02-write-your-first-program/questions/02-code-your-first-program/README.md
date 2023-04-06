@@ -31,9 +31,9 @@ package main
 func main() {
 }
 ```
-* To create a library package
-* To properly exit from the program
-* To create an executable Go program *CORRECT*
+* *To create a library package*
+* *To properly exit from the program*
+* **To create an executable Go program** *CORRECT*
 
 
 ## What is the purpose of func main in the following program?
@@ -43,9 +43,9 @@ package main
 func main() {
 }
 ```
-1. It defines a package called main
-2. It allows Go to start executing the program *CORRECT*
-3. It prints a message to the console
+1. *It defines a package called main*
+2. **It allows Go to start executing the program** *CORRECT*
+3. *It prints a message to the console*
 
 > **1:** main function doesn't create a package.
 >
@@ -107,8 +107,8 @@ func main() {
 
 
 ## Do you have to call the main function yourself?
-1. Yes, so that, I can execute my program.
-2. No, Go calls the main function automatically. *CORRECT*
+1. *Yes, so that, I can execute my program.*
+2. **No, Go calls the main function automatically.** *CORRECT*
 
 > **1:** No, you don't need to call the main function. Go automatically executes it.
 >

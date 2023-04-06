@@ -1,6 +1,6 @@
 ## What is the difference between `go build` and `go run`?
-1. `go run` just compiles a program; whereas `go build` both compiles and runs it.
-2. `go run` both compiles and runs a program; whereas `go build` just compiles it. *CORRECT*
+1. *`go run` just compiles a program; whereas `go build` both compiles and runs it.*
+2. **`go run` both compiles and runs a program; whereas `go build` just compiles it.** *CORRECT*
 
 > **1:** It's opposite actually.
 >
@@ -11,10 +11,10 @@
 
 
 ## Go saves the compiled code in a directory. What is the name of that directory?
-1. The same directory where you call `go build` *CORRECT*
-2. $GOPATH/src directory
-3. $GOPATH/pkg directory
-4. Into a temporary directory.
+1. **The same directory where you call `go build`** *CORRECT*
+2. *$GOPATH/src directory*
+3. *$GOPATH/pkg directory*
+4. *Into a temporary directory.*
 
 > **2:** There only lives Go source-code files
 >
