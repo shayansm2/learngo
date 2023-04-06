@@ -1,11 +1,3 @@
-// Copyright © 2018 Inanc Gumus
-// Learn Go Programming Course
-// License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-//
-// For more tutorials  : https://learngoprogramming.com
-// In-person training  : https://www.linkedin.com/in/inancgumus/
-// Follow me on twitter: https://twitter.com/inancgumus
-
 // package main is a special package
 // it allows Go to create an executable file
 package main
@@ -23,7 +15,7 @@ import "fmt"
 
 // "func main" is special.
 //
-// Go has to know where to start
+// # Go has to know where to start
 //
 // func main creates a starting point for Go
 //
@@ -40,23 +32,11 @@ func main() {
 	//   "fmt" package
 
 	// Exported = First Letter is uppercase
-	fmt.Println("Hello Gopher!")
+	fmt.Println("Hello shayan!")
 
 	// Go cannot call Println function by itself.
 	// That's why you need to call it here.
 	// It only calls `func main` automatically.
 
-	// -----
-
 	// Go supports Unicode characters in string literals
-	// And also in source-code: KÖSTEBEK!
-	//
-	// Because: Literal ~= Source Code
-
-	// EXERCISE: Remove the comments from below --> //
-	// fmt.Println("Merhaba Köstebek!")
-
-	// Unnecessary note:
-	// "Merhaba Köstebek" means "Hello Gopher"
-	// in Turkish language
 }
