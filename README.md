@@ -9,7 +9,7 @@ resources:
     - [x] [02-write-your-first-program](./02-write-your-first-program)
     - [x] [03-packages-and-scopes](./03-packages-and-scopes)
     - [x] [04-statements-expressions-comments](./04-statements-expressions-comments)
-    - [ ] 05-write-your-first-library-package
+    - [x] [05-write-your-first-library-package](./05-write-your-first-library-package)
     - [ ] 06-variables
     - [ ] 07-printf
     - [ ] 08-numbers-and-strings
