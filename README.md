@@ -5,10 +5,10 @@ resources:
 - [ ] SoloLearn app
 - [ ] [YouTube golang full course](https://www.youtube.com/watch?v=yyUHQIec83I&t=1528s)
 - [ ] [learngo github](https://github.com/inancgumus/learngo)
-    - [x] 01-get-started
-    - [x] 02-write-your-first-program
-    - [x] 03-packages-and-scopes
-    - [x] 04-statements-expressions-comments
+    - [x] [01-get-started](./01-get-started)
+    - [x] [02-write-your-first-program](./02-write-your-first-program)
+    - [x] [03-packages-and-scopes](./03-packages-and-scopes)
+    - [x] [04-statements-expressions-comments](./04-statements-expressions-comments)
     - [ ] 05-write-your-first-library-package
     - [ ] 06-variables
     - [ ] 07-printf
