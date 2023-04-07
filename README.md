@@ -6,7 +6,7 @@ resources:
 - [ ] [learngo github](https://github.com/inancgumus/learngo)
   - [x] 01-get-started
   - [x] 02-write-your-first-program
-  - [ ] 03-packages-and-scopes
+  - [x] 03-packages-and-scopes
   - [ ] 04-statements-expressions-comments
   - [ ] 05-write-your-first-library-package
   - [ ] 06-variables

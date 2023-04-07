@@ -10,4 +10,4 @@
    - and then run it: `./main`
 
 
-If you create other files and run them all, you can use this command: `go run .`
+If you have multiple files in a package: `go run .` or `go run *.go`
