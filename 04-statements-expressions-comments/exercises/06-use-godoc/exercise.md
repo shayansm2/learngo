@@ -6,3 +6,15 @@
 ## HINT
 
 You should use correct `go doc` tools
+
+## DOCUMENTATION:
+
+```shell
+go doc runtime NumCPU
+```
+
+## SOURCE CODE:
+
+```shell
+go doc -src runtime NumCPU
+```

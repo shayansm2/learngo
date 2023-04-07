@@ -7,7 +7,7 @@ resources:
   - [x] 01-get-started
   - [x] 02-write-your-first-program
   - [x] 03-packages-and-scopes
-  - [ ] 04-statements-expressions-comments
+  - [x] 04-statements-expressions-comments
   - [ ] 05-write-your-first-library-package
   - [ ] 06-variables
   - [ ] 07-printf

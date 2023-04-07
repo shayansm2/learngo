@@ -50,9 +50,9 @@ func main() {
 >
 
 ## How should you name your code so that Go can generate documentation from your code automatically?
-1. By commenting each line of the code; then it will generate the documentation from whatever it sees
-2. By starting the comments using the name of the declared names *CORRECT*
-3. By using multi-line comments
+1. *By commenting each line of the code; then it will generate the documentation from whatever it sees*
+2. **By starting the comments using the name of the declared names** *CORRECT*
+3. *By using multi-line comments*
 
 > **1:** This won't help. Sorry.
 >
@@ -63,10 +63,10 @@ func main() {
 
 
 ## Which tool do you need to use from the command-line to print the documentation?
-1. go build
-2. go run
-3. go doctor
-4. go doc *CORRECT*
+1. *go build*
+2. *go run*
+3. *go doctor*
+4. **go doc** *CORRECT*
 
 
 ## What's the difference between `godoc` and `go doc`?
