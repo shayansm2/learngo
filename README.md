@@ -10,7 +10,7 @@ resources:
     - [x] [03-packages-and-scopes](./03-packages-and-scopes)
     - [x] [04-statements-expressions-comments](./04-statements-expressions-comments)
     - [x] [05-write-your-first-library-package](./05-write-your-first-library-package)
-    - [ ] 06-variables
+    - [x] [06-variables](./06-variables)
     - [ ] 07-printf
     - [ ] 08-numbers-and-strings
     - [ ] 09-go-type-system
