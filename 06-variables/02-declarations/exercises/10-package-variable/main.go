@@ -8,6 +8,8 @@
 
 package main
 
+var packageVar int
+
 // ---------------------------------------------------------
 // EXERCISE: Package Variable
 //

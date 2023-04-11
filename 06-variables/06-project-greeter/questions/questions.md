@@ -7,9 +7,9 @@
 ```go
 var Args []string
 ```
-* string
-* string array
-* a slice of strings *CORRECT*
+* *string*
+* *string array*
+* **a slice of strings** *CORRECT*
 
 ## What is the type of each value in the `Args` variable?
 ```go

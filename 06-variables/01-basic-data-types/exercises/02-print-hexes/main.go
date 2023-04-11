@@ -66,4 +66,7 @@ func main() {
 
 	// COMMENT-OUT ALL THE CODE ABOVE, THEN,
 	// ADD YOUR OWN SOLUTIONS BELOW
+
+	fmt.Println(0b1111, 15, 0xf)
+	fmt.Println(0b100100011, 291, 0x123)
 }

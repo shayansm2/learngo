@@ -17,7 +17,7 @@
 - all numeric types
 
 ## Which type's zero value is nil?
-- bool
-- pointer *CORRECT*
-- string
-- all numeric types
+- *bool*
+- **pointer** *CORRECT*
+- *string*
+- *all numeric types*

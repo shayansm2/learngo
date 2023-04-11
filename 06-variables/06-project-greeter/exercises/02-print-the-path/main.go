@@ -8,6 +8,12 @@
 
 package main
 
+import (
+	"fmt"
+	"os"
+	"path"
+)
+
 // ---------------------------------------------------------
 // EXERCISE: Print the Path
 //
@@ -23,4 +29,6 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	dir, _ := path.Split(os.Args[0])
+	fmt.Println(dir)
 }
