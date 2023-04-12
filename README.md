@@ -37,3 +37,5 @@ resources:
     - [ ] 24-structs
     - [ ] 25-functions
     - [ ] 26-pointers
+
+> you can also read articles about Go [here](https://github.com/enocom/gopher-reading-list)
