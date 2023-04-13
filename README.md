@@ -4,12 +4,12 @@ resources:
 
 - [ ] [YouTube golang full course](https://www.youtube.com/watch?v=yyUHQIec83I&t=1528s)
 - [ ] SoloLearn app
-  - [x] getting started
-  - [x] basic concepts
-  - [ ] functions
-  - [ ] pointers and structs
-  - [ ] array, range, map
-  - [ ] concurrency
+    - [x] getting started
+    - [x] basic concepts
+    - [x] functions
+    - [ ] pointers and structs
+    - [ ] array, range, map
+    - [ ] concurrency
 - [ ] [learngo github](https://github.com/inancgumus/learngo)
     - [x] [01-get-started](./01-get-started)
     - [x] [02-write-your-first-program](./02-write-your-first-program)
@@ -17,7 +17,7 @@ resources:
     - [x] [04-statements-expressions-comments](./04-statements-expressions-comments)
     - [x] [05-write-your-first-library-package](./05-write-your-first-library-package)
     - [x] [06-variables](./06-variables)
-    - [ ] 07-printf
+    - [x] [07-printf](./07-printf)
     - [ ] 08-numbers-and-strings
     - [ ] 09-go-type-system
     - [ ] 10-constants
