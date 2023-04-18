@@ -6,11 +6,9 @@ import (
 )
 
 func StringDoc() {
-	var s string
-	s = `
-	hello
-	how are you
-	`
+	s := `hello
+	how are you` // it's ` not '
+
 	fmt.Println(strings.TrimSpace(s))
 
 	char := "b"
