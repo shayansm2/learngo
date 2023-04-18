@@ -18,7 +18,7 @@ resources:
     - [x] [05-write-your-first-library-package](./05-write-your-first-library-package)
     - [x] [06-variables](./06-variables)
     - [x] [07-printf](./07-printf)
-    - [ ] 08-numbers-and-strings
+    - [x] [08-numbers-and-strings](./08-numbers-and-strings)
     - [ ] 09-go-type-system
     - [ ] 10-constants
     - [ ] 11-if

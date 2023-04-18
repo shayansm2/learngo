@@ -16,5 +16,9 @@ func StringDoc() {
 		fmt.Printf("Vowel")
 	}
 
-	fmt.Println(strings.ToUpper(strings.Repeat("yansha", 3)))
+	fmt.Println(strings.Repeat("yansha", 3))
+	fmt.Println(strings.ToUpper("abc"))
+	fmt.Println(strings.ToLower("DEF"))
+	fmt.Println(strings.TrimSpace(" h i     j"))
+	fmt.Println(strings.TrimRight("    k l m", " "))
 }
