@@ -7,7 +7,7 @@ resources:
     - [x] getting started
     - [x] basic concepts
     - [x] functions
-    - [ ] pointers and structs
+    - [x] pointers and structs
     - [ ] array, range, map
     - [ ] concurrency
 - [ ] [learngo github](https://github.com/inancgumus/learngo)
