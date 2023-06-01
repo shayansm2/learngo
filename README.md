@@ -3,13 +3,13 @@
 resources:
 
 - [ ] [YouTube golang full course](https://www.youtube.com/watch?v=yyUHQIec83I&t=1528s)
-- [ ] SoloLearn app
+- [x] SoloLearn app ([certificate](https://www.sololearn.com/Certificate/CT-C8VXYZWC/png))
     - [x] getting started
     - [x] basic concepts
     - [x] functions
     - [x] pointers and structs
-    - [ ] array, range, map
-    - [ ] concurrency
+    - [x] array, range, map
+    - [x] concurrency
 - [ ] [learngo github](https://github.com/inancgumus/learngo)
     - [x] [01-get-started](./01-get-started)
     - [x] [02-write-your-first-program](./02-write-your-first-program)
