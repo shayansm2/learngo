@@ -2,9 +2,7 @@ package main
 
 import "fmt"
 
-type Email struct {
-	Otp
-}
+type Email struct{}
 
 func (s *Email) genRandomOTP(len int) string {
 	randomOTP := "1234"
