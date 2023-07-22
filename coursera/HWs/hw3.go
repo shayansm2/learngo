@@ -4,29 +4,29 @@ import (
 	"fmt"
 )
 
-type Animal struct {
+type DiscreteAnimal struct {
 	food       string
 	locomotion string
 	noise      string
 }
 
-func (this Animal) Eat() {
+func (this DiscreteAnimal) Eat() {
 	fmt.Println(this.food)
 }
 
-func (this Animal) Move() {
+func (this DiscreteAnimal) Move() {
 	fmt.Println(this.locomotion)
 }
 
-func (this Animal) Speak() {
+func (this DiscreteAnimal) Speak() {
 	fmt.Println(this.noise)
 }
 
-func initAnimals() map[string]Animal {
-	animals := make(map[string]Animal)
-	animals["cow"] = Animal{food: "grass", locomotion: "walk", noise: "moo"}
-	animals["bird"] = Animal{food: "worms", locomotion: "fly", noise: "peep"}
-	animals["snake"] = Animal{food: "mice", locomotion: "slither", noise: "hsss"}
+func initAnimals() map[string]DiscreteAnimal {
+	animals := make(map[string]DiscreteAnimal)
+	animals["cow"] = DiscreteAnimal{food: "grass", locomotion: "walk", noise: "moo"}
+	animals["bird"] = DiscreteAnimal{food: "worms", locomotion: "fly", noise: "peep"}
+	animals["snake"] = DiscreteAnimal{food: "mice", locomotion: "slither", noise: "hsss"}
 	return animals
 }
 

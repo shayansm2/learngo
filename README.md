@@ -37,7 +37,9 @@ resources:
     - [ ] 24-structs
     - [ ] 25-functions
     - [ ] 26-pointers
-- [ ] Visualizing Concurrency in Go ([codes](https://divan.dev/talks/2016/lviv/index.html#/) and [visuals](https://divan.dev/posts/go_concurrency_visualize/))
-- [ ] Coursera: Functions, Methods, and Interfaces in Go
+- [ ] Visualizing Concurrency in Go ([codes](https://divan.dev/talks/2016/lviv/index.html#/)
+  and [visuals](https://divan.dev/posts/go_concurrency_visualize/))
+- [x] Coursera: Functions, Methods, and Interfaces in
+  Go ([Course Certificate](https://www.coursera.org/account/accomplishments/verify/6LTMNRGVUMZJ))
 
 > you can also read articles about Go [here](https://github.com/enocom/gopher-reading-list)
