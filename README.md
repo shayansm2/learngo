@@ -41,5 +41,18 @@ resources:
   and [visuals](https://divan.dev/posts/go_concurrency_visualize/))
 - [x] Coursera: Functions, Methods, and Interfaces in
   Go ([Course Certificate](https://www.coursera.org/account/accomplishments/verify/6LTMNRGVUMZJ))
+- [ ] reading Go Web Programming Book
+    - [x] chapter 1
+    - [ ] chapter 2
+    - [ ] chapter 3
+    - [ ] chapter 4
+    - [ ] chapter 5
+    - [ ] chapter 6
+    - [ ] chapter 7
+    - [ ] chapter 8
+    - [ ] chapter 9
+    - [ ] chapter 10
+    - [ ] chapter 11
+    - [ ] chapter 12
 
 > you can also read articles about Go [here](https://github.com/enocom/gopher-reading-list)
