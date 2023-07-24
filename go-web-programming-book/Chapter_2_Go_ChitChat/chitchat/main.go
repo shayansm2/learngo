@@ -1,12 +1,13 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 	"time"
 )
 
 func main() {
-	p("ChitChat", version(), "started at", config.Address)
+	fmt.Println("ChitChat", version(), "started at", config.Address)
 
 	// handle static assets
 	mux := http.NewServeMux()

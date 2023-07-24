@@ -47,7 +47,7 @@ func readThread(writer http.ResponseWriter, request *http.Request) {
 	uuid := vals.Get("id")
 	thread, err := data.ThreadByUUID(uuid)
 	if err != nil {
-		error_message(writer, request, "Cannot read thread")
+		errorMessage(writer, request, "Cannot read thread")
 	} else {
 		_, err := session(writer, request)
 		if err != nil {
@@ -77,7 +77,7 @@ func postThread(writer http.ResponseWriter, request *http.Request) {
 		uuid := request.PostFormValue("uuid")
 		thread, err := data.ThreadByUUID(uuid)
 		if err != nil {
-			error_message(writer, request, "Cannot read thread")
+			errorMessage(writer, request, "Cannot read thread")
 		}
 		if _, err := user.CreatePost(thread, body); err != nil {
 			danger(err, "Cannot create post")
