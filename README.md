@@ -43,7 +43,7 @@ resources:
   Go ([Course Certificate](https://www.coursera.org/account/accomplishments/verify/6LTMNRGVUMZJ))
 - [ ] reading Go Web Programming Book
     - [x] chapter 1
-    - [ ] chapter 2
+    - [x] chapter 2
     - [ ] chapter 3
     - [ ] chapter 4
     - [ ] chapter 5

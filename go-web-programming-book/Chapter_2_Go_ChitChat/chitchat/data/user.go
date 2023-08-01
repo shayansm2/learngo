@@ -21,7 +21,7 @@ type Session struct {
 	CreatedAt time.Time
 }
 
-// Create a new session for an existing user
+// CreateSession Create a new session for an existing user
 func (user *User) CreateSession() (session Session, err error) {
 	statement := "insert into sessions (uuid, email, user_id, created_at) values ($1, $2, $3, $4) returning id, uuid, email, user_id, created_at"
 	stmt, err := Db.Prepare(statement)
@@ -34,7 +34,7 @@ func (user *User) CreateSession() (session Session, err error) {
 	return
 }
 
-// Get the session for an existing user
+// Session Get the session for an existing user
 func (user *User) Session() (session Session, err error) {
 	session = Session{}
 	err = Db.QueryRow("SELECT id, uuid, email, user_id, created_at FROM sessions WHERE user_id = $1", user.Id).
@@ -56,7 +56,7 @@ func (session *Session) Check() (valid bool, err error) {
 	return
 }
 
-// Delete session from database
+// DeleteByUUID Delete session from database
 func (session *Session) DeleteByUUID() (err error) {
 	statement := "delete from sessions where uuid = $1"
 	stmt, err := Db.Prepare(statement)
@@ -69,7 +69,7 @@ func (session *Session) DeleteByUUID() (err error) {
 	return
 }
 
-// Get the user from the session
+// User Get the user from the session
 func (session *Session) User() (user User, err error) {
 	user = User{}
 	err = Db.QueryRow("SELECT id, uuid, name, email, created_at FROM users WHERE id = $1", session.UserId).
@@ -77,7 +77,7 @@ func (session *Session) User() (user User, err error) {
 	return
 }
 
-// Delete all sessions from database
+// SessionDeleteAll Delete all sessions from database
 func SessionDeleteAll() (err error) {
 	statement := "delete from sessions"
 	_, err = Db.Exec(statement)
@@ -127,14 +127,14 @@ func (user *User) Update() (err error) {
 	return
 }
 
-// Delete all users from database
+// UserDeleteAll Delete all users from database
 func UserDeleteAll() (err error) {
 	statement := "delete from users"
 	_, err = Db.Exec(statement)
 	return
 }
 
-// Get all users in the database and returns it
+// Users Get all users in the database and returns it
 func Users() (users []User, err error) {
 	rows, err := Db.Query("SELECT id, uuid, name, email, password, created_at FROM users")
 	if err != nil {
@@ -151,7 +151,7 @@ func Users() (users []User, err error) {
 	return
 }
 
-// Get a single user given the email
+// UserByEmail Get a single user given the email
 func UserByEmail(email string) (user User, err error) {
 	user = User{}
 	err = Db.QueryRow("SELECT id, uuid, name, email, password, created_at FROM users WHERE email = $1", email).
@@ -159,7 +159,7 @@ func UserByEmail(email string) (user User, err error) {
 	return
 }
 
-// Get a single user given the UUID
+// UserByUUID Get a single user given the UUID
 func UserByUUID(uuid string) (user User, err error) {
 	user = User{}
 	err = Db.QueryRow("SELECT id, uuid, name, email, password, created_at FROM users WHERE uuid = $1", uuid).
