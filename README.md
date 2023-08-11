@@ -56,3 +56,7 @@ resources:
     - [ ] chapter 12
 
 > you can also read articles about Go [here](https://github.com/enocom/gopher-reading-list)
+
+
+[//]: # (- [ ] 11-if &#40;**11-if/exercises/04-vowel-or-cons/solution2/main.go:9**&#41;)
+[//]: # (- [ ] 14-arrays &#40;**14-arrays/03-examples-2-hipsters-love-bookstore/main.go:27**&#41;)

@@ -23,4 +23,8 @@ func strconvDoc() {
 	fmt.Println(ascii)
 
 	fmt.Println("boolian status is " + strconv.FormatBool(true))
+
+	// convert binary number to integer
+	i, _ := strconv.ParseInt("00010110", 2, 64)
+	fmt.Println(i)
 }

@@ -15,6 +15,7 @@ import (
 )
 
 func main() {
+	// Atoi: ASCII to integer
 	// Atoi returns an error value
 	// So, you should always check it
 

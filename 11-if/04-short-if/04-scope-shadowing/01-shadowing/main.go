@@ -16,7 +16,7 @@ import (
 
 func main() {
 	// UNCOMMENT THIS TO SEE IT IN ACTION:
-	// var n int
+	var n int
 
 	if a := os.Args; len(a) != 2 {
 		fmt.Println("Give me a number.")
@@ -29,10 +29,9 @@ func main() {
 	} else {
 		fmt.Printf("%s * 2 is %d\n", a[1], n*2)
 	}
-
 	// n here belongs to the main func
 	// not to the if statement above
 
 	// UNCOMMENT ALSO LINES BELOW TO SEE IT IN ACTION:
-	// fmt.Printf("n is %d. 👻 👻 👻 - you've been shadowed ;-)\n", n)
+	fmt.Printf("n is %d. 👻 👻 👻 - you've been shadowed ;-)\n", n)
 }
