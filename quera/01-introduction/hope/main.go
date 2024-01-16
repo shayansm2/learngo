@@ -25,7 +25,7 @@ func main() {
 				if j > 0 {
 					fmt.Print(" ")
 				}
-				fmt.Print("Hope")
+				fmt.Print("hope")
 			}
 			fmt.Println()
 		}

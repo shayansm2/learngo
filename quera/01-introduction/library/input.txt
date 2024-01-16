@@ -1,0 +1,8 @@
+7
+ADD 123 Harry Potter
+ADD 12 Zebra
+ADD 10 Alice
+ADD 21865 Lion
+REMOVE 21865
+REMOVE 853058038509
+ADD 60 Harry Potter
