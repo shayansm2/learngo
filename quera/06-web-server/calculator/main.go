@@ -14,64 +14,65 @@ type Server struct {
 	port string
 }
 
-type response struct {
-	Result string `json:"result"`
-	Err    string `json:"error"`
-}
-
 func NewServer(port string) *Server {
 	return &Server{port}
 }
 
 func (s *Server) Start() {
-	http.Handle("/add", errorHandler(addHandler))
-	http.Handle("/sub", errorHandler(subHandler))
+	http.Handle("/add", responseHandler(addHandler))
+	http.Handle("/sub", responseHandler(subHandler))
 	err := http.ListenAndServe(fmt.Sprintf(":%v", s.port), nil)
 	if err != nil {
 		fmt.Println(err)
 	}
 }
 
-type errorHandler func(w http.ResponseWriter, r *http.Request) error
+type response struct {
+	Result string `json:"result"`
+	Err    string `json:"error"`
+}
 
-func (f errorHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	err := f(w, r)
+type responseHandler func(r *http.Request) (string, error)
+
+func (f responseHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	resut, err := f(r)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
 		json.NewEncoder(w).Encode(response{Err: fmt.Sprint(err)})
+	} else {
+		w.WriteHeader(http.StatusOK)
+		json.NewEncoder(w).Encode(response{Result: resut})
 	}
 }
 
-func addHandler(w http.ResponseWriter, r *http.Request) error {
+func addHandler(r *http.Request) (string, error) {
 	var result int64
 	numbers, err := getNumbersFromRequest(r)
 	if err != nil {
-		return err
+		return "", err
 	}
 	for _, num := range numbers {
 		if checkAddOverflow(result, int64(num)) {
-			return errors.New("Overflow")
+			return "", errors.New("Overflow")
 		}
 		result += int64(num)
 	}
-	json.NewEncoder(w).Encode(response{Result: fmt.Sprintf("The result of your query is: %d", result)})
-	return nil
+	return fmt.Sprintf("The result of your query is: %d", result), nil
 }
 
-func subHandler(w http.ResponseWriter, r *http.Request) error {
+func subHandler(r *http.Request) (string, error) {
 	numbers, err := getNumbersFromRequest(r)
 	if err != nil {
-		return err
+		return "", err
 	}
 	result := int64(numbers[0])
 	for i := 1; i < len(numbers); i++ {
 		if checkAddOverflow(result, -int64(numbers[i])) {
-			return errors.New("Overflow")
+			return "", errors.New("Overflow")
 		}
 		result -= int64(numbers[i])
 	}
-	json.NewEncoder(w).Encode(response{Result: fmt.Sprintf("The result of your query is: %d", result)})
-	return nil
+	return fmt.Sprintf("The result of your query is: %d", result), nil
 }
 
 func getNumbersFromRequest(r *http.Request) ([]int, error) {
