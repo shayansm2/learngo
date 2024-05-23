@@ -1,0 +1,18 @@
+{
+  "btc-rls": {
+    "status": "OK",
+    "stats": {
+      "btc-rls": {
+        "latest": "1234.385"
+      }
+    }
+  },
+  "btc-usdt": {
+    "status": "OK",
+    "stats": {
+      "btc-usdt": {
+        "latest": "28650.385"
+      }
+    }
+  }
+}
