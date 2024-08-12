@@ -1,10 +1,9 @@
 package qtodo_test
 
 import (
+	"qtodo"
 	"testing"
 	"time"
-
-	"qtodo"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
