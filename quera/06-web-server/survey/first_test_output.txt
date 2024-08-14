@@ -1,0 +1,11 @@
+Invalid flight fUnk
+Duplicate ticket for f1 p1
+Accepted comment for f1 by p1
+Duplicate comment for f1 by p1
+Accepted comment for f2 by p1
+Invalid passenger for f3 p1
+Accepted comment for f1 by p2
+Accepted comment for f1 by p3
+Invalid flight fUnk
+Average score for f1 is 7.00
+Average score for f2 is 6.00

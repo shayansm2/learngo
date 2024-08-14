@@ -1,0 +1,19 @@
+3
+f3
+f2
+f1
+6
+p1 fUnk
+p1 f1
+p1 f1
+p2 f1
+p3 f1
+p1 f2
+7
+p1 f1 10 text1
+p1 f1 1 text2
+p1 f2 6 text3
+p1 f3 5 text4
+p2 f1 3 text5
+p3 f1 8 text6
+p3 fUnk 1 text7
