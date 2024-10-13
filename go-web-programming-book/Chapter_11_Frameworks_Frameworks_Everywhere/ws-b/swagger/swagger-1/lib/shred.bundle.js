@@ -526,7 +526,7 @@ module.exports = Logger;
 });
 
 require.define("util", function (require, module, exports, __dirname, __filename) {
-    // todo
+    // qtodo
 
 });
 
@@ -1291,12 +1291,12 @@ module.exports = Request;
 });
 
 require.define("http", function (require, module, exports, __dirname, __filename) {
-    // todo
+    // qtodo
 
 });
 
 require.define("https", function (require, module, exports, __dirname, __filename) {
-    // todo
+    // qtodo
 
 });
 

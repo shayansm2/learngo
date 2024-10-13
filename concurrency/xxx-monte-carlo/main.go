@@ -20,12 +20,12 @@ import (
 
 func main() {
 	if len(os.Args) != 2 {
-		exit("Please provide the sample rate")
+		exit("Please provide the future-result rate")
 	}
 
 	samples, err := strconv.Atoi(os.Args[1])
 	if err != nil {
-		exit("Incorrect sample rate")
+		exit("Incorrect future-result rate")
 	}
 
 	elapse := measure(time.Now())

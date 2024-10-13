@@ -1,0 +1,6 @@
+COAT: white brown yellow
+SHIRT: yellow pink red
+PANTS:
+CAP:
+JACKET: indigo orange
+WINTER

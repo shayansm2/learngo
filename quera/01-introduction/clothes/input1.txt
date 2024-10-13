@@ -1,0 +1,6 @@
+COAT: white brown yellow
+SHIRT: yellow pink red
+PANTS: white carbon-blue
+CAP: purple grey
+JACKET: indigo orange
+SUMMER
